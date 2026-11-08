@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>🎀 쭈코야키의 HAPPY DAY!</title>
+<meta name="description" content="11월 21일 토요일! 친구들아, 우리 같이 홍대 놀러 가자! 💗">
+<meta property="og:type" content="website">
+<meta property="og:title" content="🎀 쭈코야키의 HAPPY DAY!">
+<meta property="og:description" content="11월 21일 토요일! 친구들아, 우리 같이 홍대 놀러 가자! 💗">
+<meta property="og:image" content="OG_URL/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="OG_URL/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&family=Pacifico&family=Gamja+Flower&display=swap">
+<style>
+:root{
+  --pink:#ffc2d9; --hot:#ff5fa2; --lav:#d9c8ff; --purple:#8e5bd9; --butter:#fff1a8; --mint:#bdf0dc; --cream:#fffaf2; --ink:#5a3a5e;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root:not([data-theme="light"]){color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Gamja Flower','Gaegu','Jua','Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:18px;line-height:1.5;overflow-x:hidden;
+  background-image:radial-gradient(var(--pink) 1.6px,transparent 1.8px);background-size:22px 22px}
+.wrap{max-width:430px;margin:0 auto;padding:0 18px 40px;position:relative}
+.disp{font-family:'Jua','Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+.script{font-family:'Pacifico','Gaegu',cursive}
+section{position:relative;padding:28px 0}
+
+/* HERO */
+.hero{text-align:center;padding-top:34px}
+.banner{display:inline-block;background:var(--hot);color:#fff;padding:6px 18px;border-radius:30px;font-size:17px;transform:rotate(-3deg);box-shadow:3px 3px 0 var(--purple)}
+.card{background:#fff;border:3px solid var(--purple);border-radius:28px;box-shadow:6px 6px 0 var(--lav);padding:26px 18px 24px;margin-top:22px;position:relative}
+h1{margin:6px 0 0;font-weight:400;line-height:1.05;font-size:44px;color:var(--hot);text-shadow:3px 3px 0 var(--butter)}
+h1 b{display:block;font-size:62px;color:var(--purple);text-shadow:3px 3px 0 var(--pink);letter-spacing:1px}
+.date{display:inline-block;margin-top:14px;background:var(--butter);border:2.5px dashed var(--purple);border-radius:14px;padding:6px 16px;font-size:22px}
+.sub{margin:16px 0 0;font-size:21px}
+.cake{width:110px;margin:-70px auto 0;display:block;animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px) rotate(2deg)}}
+
+/* floating deco */
+.fl{position:absolute;pointer-events:none;animation:flt 5s ease-in-out infinite;font-size:26px}
+@keyframes flt{50%{transform:translateY(-10px) rotate(12deg)}}
+.tw{animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.4;transform:scale(.7)}}
+
+/* PLAN */
+h2{margin:0 0 6px;font-weight:400;font-size:30px;text-align:center;color:var(--purple)}
+h2 span{display:inline-block;background:var(--pink);padding:2px 16px;border-radius:12px;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--butter)}
+.hint{text-align:center;margin:8px 0 22px;font-size:17px}
+.tl{position:relative;padding-left:14px}
+.tl::before{content:"";position:absolute;left:6px;top:10px;bottom:10px;border-left:4px dotted var(--hot)}
+.item{position:relative;margin:0 0 20px 22px;padding:12px 14px 12px 16px;border:2.5px solid var(--purple);border-radius:20px;background:#fff;box-shadow:4px 4px 0 var(--c,var(--lav));opacity:0;transform:translateY(14px);transition:.6s}
+.item.in{opacity:1;transform:none}
+.item::before{content:"";position:absolute;left:-35px;top:18px;width:18px;height:18px;border-radius:50%;background:var(--hot);border:3px solid #fff;box-shadow:0 0 0 3px var(--purple)}
+.item:nth-child(odd){transform-origin:left}
+.time{display:inline-block;background:var(--hot);color:#fff;border-radius:12px;padding:1px 12px;font-size:22px;margin-right:6px}
+.ttl{font-size:22px;color:var(--purple)}
+.item p{margin:4px 0 0;font-size:18px}
+.item small{display:block;margin-top:4px;color:#9a6fb0;font-size:16px}
+.place{display:inline-block;background:var(--butter);border-radius:10px;padding:0 10px;margin-top:4px}
+
+/* CHECK */
+.chk{display:flex;gap:14px;margin-top:16px}
+.chk div{flex:1;text-align:center;padding:18px 8px;background:#fff;border:3px solid var(--purple);border-radius:24px;box-shadow:4px 4px 0 var(--mint);font-size:22px}
+.chk div:nth-child(1){transform:rotate(-2.5deg)}
+.chk div:nth-child(2){transform:rotate(2.5deg);box-shadow:4px 4px 0 var(--butter)}
+.chk svg{width:54px;height:54px;display:block;margin:0 auto 6px}
+
+/* MEET + GUIDE */
+.meet{position:relative;margin-top:26px;background:var(--butter);border:3px solid var(--hot);border-radius:22px;box-shadow:5px 5px 0 var(--purple);padding:20px 16px 14px;text-align:left;transform:rotate(-1deg)}
+.meet .tape{top:-11px;background:rgba(189,240,220,.9)}
+.mt{text-align:center;color:var(--hot);font-size:22px;margin-bottom:8px}
+.row{display:flex;align-items:center;gap:10px;margin:8px 0}
+.lb{flex:none;width:58px;text-align:center;background:var(--hot);color:#fff;border-radius:10px;padding:2px 0;font-size:18px}
+.v{font-size:24px;color:var(--ink);line-height:1.25}
+.guide{margin-top:8px;background:#fff;border:3px dashed var(--purple);border-radius:22px;padding:18px 16px;position:relative}
+.guide h3{margin:0 0 10px;font-weight:400;font-size:21px;color:var(--purple)}
+.guide ul{margin:0;padding:0;list-style:none}
+.guide li{margin:8px 0;padding-left:26px;position:relative;font-size:18px;line-height:1.45}
+.guide li::before{content:"💗";position:absolute;left:0;font-size:16px}
+.guide a{color:var(--hot);text-decoration:underline;text-underline-offset:3px}
+.guide b{background:var(--butter);padding:0 4px;border-radius:6px;font-weight:700}
+/* END */
+.end{text-align:center}
+.polaroid{display:inline-block;background:#fff;padding:12px 12px 18px;border:2px solid var(--lav);box-shadow:4px 6px 0 var(--pink);transform:rotate(-3deg);margin-bottom:16px}
+.polaroid .ph{width:200px;height:130px;background:linear-gradient(135deg,var(--pink),var(--lav) 60%,var(--mint));display:flex;align-items:center;justify-content:center;font-size:54px}
+.polaroid em{display:block;margin-top:8px;font-style:normal;font-size:20px}
+.end p.big{font-size:28px;line-height:1.35;margin:0;color:var(--hot)}
+.tape{position:absolute;top:-10px;left:50%;width:70px;height:20px;margin-left:-35px;background:rgba(255,241,168,.85);transform:rotate(4deg)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.item{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section class="hero">
+  <span class="fl tw" style="left:4px;top:30px">⭐</span>
+  <span class="fl" style="right:6px;top:70px;animation-delay:.8s">🎈</span>
+  <span class="fl tw" style="left:14px;top:250px;animation-delay:1s">✨</span>
+  <span class="fl" style="right:10px;top:330px;animation-delay:.4s">💗</span>
+  <div class="banner disp">🎀 YOU'RE INVITED! 🎀</div>
+  <div class="card">
+    <svg class="cake" viewBox="0 0 120 110" aria-hidden="true">
+      <rect x="22" y="58" width="76" height="40" rx="10" fill="#ffc2d9" stroke="#8e5bd9" stroke-width="3.5"/>
+      <path d="M22 70c9 9 15-3 25 4s16-6 26 3 17-5 25 2V62a10 10 0 0 0-10-10H32a10 10 0 0 0-10 10z" fill="#fff" stroke="#8e5bd9" stroke-width="3"/>
+      <rect x="35" y="36" width="50" height="22" rx="8" fill="#d9c8ff" stroke="#8e5bd9" stroke-width="3.5"/>
+      <rect x="57" y="18" width="6" height="18" rx="3" fill="#fff1a8" stroke="#8e5bd9" stroke-width="2.5"/>
+      <path d="M60 4c6 6 5 10 0 11-5-1-6-5 0-11z" fill="#ff9a3c" stroke="#8e5bd9" stroke-width="2"/>
+      <circle cx="40" cy="84" r="4" fill="#ff5fa2"/><circle cx="60" cy="86" r="4" fill="#bdf0dc"/><circle cx="80" cy="84" r="4" fill="#ff5fa2"/>
+    </svg>
+    <h1 class="disp" style="margin-top:14px">쭈코야키의<b>HAPPY DAY!</b></h1>
+    <div class="date disp">2026.11.21</div>
+    <p class="sub">친구들아, 우리 같이 홍대 놀러 가자! 💕</p>
+  </div>
+  <div class="meet">
+    <div class="tape"></div>
+    <div class="mt disp">📍 이날 이렇게 만나!</div>
+    <div class="row"><span class="lb disp">날짜</span><span class="v disp">2026.11.21</span></div>
+    <div class="row"><span class="lb disp">시간</span><span class="v disp">12:30</span></div>
+    <div class="row"><span class="lb disp">장소</span><span class="v disp">롯데마트 양평점 정문 앞</span></div>
+  </div>
+</section>
+
+<section>
+  <span class="fl" style="right:0;top:6px">🌼</span>
+  <h2 class="disp"><span>OUR HAPPY PLAN ✨</span></h2>
+  <p class="hint">2026.11.21, 이렇게 놀 거야!</p>
+  <div class="tl">
+    <div class="item" style="--c:var(--pink)">
+      <span class="time disp">12:30</span><span class="ttl disp">친구들 만나기 📍</span>
+      <p>정문 앞에서 모여서 같이 버스 타고 홍대로 출발!</p>
+    </div>
+    <div class="item" style="--c:var(--mint)">
+      <span class="time disp">13:30</span><span class="ttl disp">스머프 방탈출 🧩</span>
+      <p>스머프 매직 포레스트 홍대점에서 미션 클리어!</p>
+      <small>약 70분 걸려요</small>
+    </div>
+    <div class="item" style="--c:var(--butter)">
+      <span class="time disp">14:40~</span><span class="ttl disp">홍대 투어 📸</span>
+      <p>인생네컷, 인형뽑기, 거리 구경!</p>
+      <small>순서와 시간은 그날 상황 보고 정해요</small>
+    </div>
+    <div class="item" style="--c:var(--lav)">
+      <span class="time disp">이후</span><span class="ttl disp">달콤한 간식 타임 🍰</span>
+      <p>카페에서 음료랑 디저트 먹고 생일 축하해줘!</p>
+    </div>
+    <div class="item" style="--c:var(--pink);margin-bottom:0">
+      <span class="time disp">16:00~17:00</span><span class="ttl disp">집으로 🏠</span>
+      <p>정확한 시간은 그날 달라질 수 있어요</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="disp"><span style="background:var(--mint)">DON'T FORGET! 🎒</span></h2>
+  <div class="chk disp">
+    <div>
+      <svg viewBox="0 0 60 60" aria-hidden="true"><rect x="6" y="14" width="48" height="32" rx="6" fill="#bdf0dc" stroke="#8e5bd9" stroke-width="3"/><rect x="6" y="22" width="48" height="6" fill="#8e5bd9"/><circle cx="18" cy="38" r="3" fill="#ff5fa2"/><circle cx="26" cy="38" r="3" fill="#fff"/></svg>
+      교통카드 🚌
+    </div>
+    <div>
+      <svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 52C8 36 6 22 14 15c7-6 14-2 16 4 2-6 9-10 16-4 8 7 6 21-16 37z" fill="#ff5fa2" stroke="#8e5bd9" stroke-width="3"/><circle cx="21" cy="24" r="3.5" fill="#fff" opacity=".8"/></svg>
+      즐거운 마음 💗
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <span class="fl tw" style="left:6px;top:20px">⭐</span>
+  <span class="fl" style="right:8px;top:40px;animation-delay:.6s">🎀</span>
+  <div class="polaroid" style="position:relative"><span class="tape"></span>
+    <div class="ph">🧸</div><em class="script" style="font-size:18px">Happy Day ♡</em>
+  </div>
+  <p class="big disp">우리 이날 신나게 놀자!<br>11월 21일에 만나! 💕</p>
+  <p style="margin-top:14px;font-size:26px">🎀 💗 ⭐ 🌼 ✨</p>
+</section>
+
+<section style="padding-top:0">
+  <div class="guide">
+    <h3 class="disp">👩 보호자님께 안내드려요</h3>
+    <ul>
+      <li>동행 보호자: 주아 엄마 (<a href="tel:01030761002">010-3076-1002</a>)</li>
+      <li>이른 점심을 든든히 먹고 만나요! 방탈출 예약 시간이 <b>13시 30분</b>이라 늦으면 안 돼요.</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+<script>
+(function(){
+  var els=document.querySelectorAll('.item');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.15});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
